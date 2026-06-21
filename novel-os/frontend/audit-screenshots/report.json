@@ -1,0 +1,585 @@
+{
+  "results": [
+    {
+      "name": "home",
+      "url": "http://127.0.0.1:5176/",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\home.png",
+      "ok": true
+    },
+    {
+      "name": "projects",
+      "url": "http://127.0.0.1:5176/projects",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\projects.png",
+      "ok": true
+    },
+    {
+      "name": "settings-llm",
+      "url": "http://127.0.0.1:5176/settings/llm",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\settings-llm.png",
+      "ok": true
+    },
+    {
+      "name": "create-category",
+      "url": "http://127.0.0.1:5176/create/category",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\create-category.png",
+      "ok": true
+    },
+    {
+      "name": "create-topics",
+      "url": "http://127.0.0.1:5176/create/topics",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\create-topics.png",
+      "ok": true
+    },
+    {
+      "name": "create-outline",
+      "url": "http://127.0.0.1:5176/create/outline",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\create-outline.png",
+      "ok": true
+    },
+    {
+      "name": "create-confirm",
+      "url": "http://127.0.0.1:5176/create/confirm",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\create-confirm.png",
+      "ok": true
+    },
+    {
+      "name": "project-dashboard",
+      "url": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "title": "Novel-OS | AI 小说写作系统",
+      "screenshot": "audit-screenshots\\project-dashboard.png",
+      "ok": true
+    },
+    {
+      "name": "project-write",
+      "url": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/write",
+      "error": "page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/write\", waiting until \"networkidle\"\u001b[22m\n",
+      "ok": false
+    }
+  ],
+  "consoleErrors": [
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/settings/llm",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/create/category",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "route": "http://127.0.0.1:5176/projects/%E6%9D%91%E8%B6%85%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%88%91%E5%B8%A6%E4%BE%97%E5%AF%A8%E7%90%83%E9%98%9F%E8%B8%A2%E7%88%86%E4%B8%96%E7%95%8C%E6%9D%AF/dashboard",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    }
+  ],
+  "pageErrors": []
+}

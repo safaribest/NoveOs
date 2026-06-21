@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小红书闷声发大财赛道洞察报告 2025-2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <style>
+    :root {
+      --bg: #0b0b0d;
+      --surface: #141418;
+      --elevated: #1e1e24;
+      --text: #f4f4f5;
+      --muted: #9ca3af;
+      --accent: #ff2442;
+      --accent-2: #ff5c7a;
+      --cyan: #22d3ee;
+      --amber: #f59e0b;
+      --violet: #a78bfa;
+      --green: #34d399;
+      --blue: #60a5fa;
+      --pink: #f472b6;
+      --line: rgba(255,255,255,0.06);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background:
+        radial-gradient(circle at 25% 30%, rgba(255,36,66,0.18) 0%, transparent 45%),
+        radial-gradient(circle at 75% 75%, rgba(34,211,238,0.08) 0%, transparent 40%),
+        var(--bg);
+      position: relative;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 160px;
+      background: linear-gradient(to bottom, transparent, var(--bg));
+    }
+    .badge {
+      display: inline-block; padding: 0.45rem 1.25rem;
+      border: 1px solid var(--accent); color: var(--accent);
+      font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase;
+      border-radius: 999px; margin-bottom: 1.75rem;
+      box-shadow: 0 0 24px rgba(255,36,66,0.15);
+    }
+    h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      font-weight: 900; line-height: 1.12; margin-bottom: 1.25rem;
+      background: linear-gradient(135deg, #fff 0%, var(--accent-2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero p {
+      color: var(--muted); font-size: clamp(1rem, 2vw, 1.35rem);
+      max-width: 680px; margin-bottom: 3rem;
+    }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+      max-width: 900px; width: 100%; position: relative; z-index: 1;
+    }
+    .stat {
+      background: rgba(255,255,255,0.03); border: 1px solid var(--line);
+      border-radius: 14px; padding: 1.5rem 1rem;
+      backdrop-filter: blur(6px);
+    }
+    .stat b {
+      display: block; font-family: 'Noto Serif SC', serif;
+      font-size: 2rem; color: var(--accent); margin-bottom: 0.25rem;
+    }
+    .stat span { font-size: 0.8rem; color: var(--muted); }
+
+    section {
+      max-width: 1100px; margin: 0 auto; padding: 4.5rem 1.5rem;
+    }
+    .section-head {
+      display: flex; align-items: baseline; gap: 1rem; margin-bottom: 0.75rem;
+    }
+    .section-num {
+      font-family: 'Noto Serif SC', serif; font-size: 2.6rem; font-weight: 900;
+      color: rgba(255,36,66,0.22); line-height: 1;
+    }
+    h2 {
+      font-family: 'Noto Serif SC', serif; font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+      font-weight: 700;
+    }
+    .section-desc {
+      color: var(--muted); margin-bottom: 2.25rem; max-width: 680px;
+    }
+
+    .card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 18px; padding: 2rem; margin-bottom: 1.5rem;
+      position: relative; overflow: hidden;
+    }
+    .card::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+      background: linear-gradient(to bottom, var(--accent), var(--accent-2));
+    }
+    .card h3 {
+      font-family: 'Noto Serif SC', serif; font-size: 1.25rem; margin-bottom: 0.75rem;
+    }
+    .card p, .card li { color: var(--muted); font-size: 0.98rem; }
+    .card ul { padding-left: 1.4rem; }
+
+    .insight {
+      background: linear-gradient(90deg, rgba(255,36,66,0.12), rgba(255,36,66,0.03));
+      border-left: 3px solid var(--accent); padding: 1.25rem 1.5rem;
+      border-radius: 0 12px 12px 0; margin: 1.25rem 0;
+    }
+    .insight strong { color: var(--accent-2); }
+
+    /* Chart containers */
+    .chart-box {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 20px; padding: 1.75rem; margin: 2rem 0;
+    }
+    .chart-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .chart-title { font-family: 'Noto Serif SC', serif; font-size: 1.25rem; }
+    .chart-note { color: var(--muted); font-size: 0.78rem; }
+    .chart-wrap { position: relative; height: 360px; }
+    .chart-wrap.tall { height: 420px; }
+
+    table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.85rem 0.75rem; text-align: left; border-bottom: 1px solid var(--line); }
+    th { color: var(--accent-2); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; background: var(--elevated); }
+    td { color: var(--muted); }
+    tr:hover td { background: rgba(255,255,255,0.02); }
+
+    .niche-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;
+    }
+    .niche {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+      padding: 1.75rem; position: relative; transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .niche:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(255,36,66,0.1); }
+    .niche-num {
+      position: absolute; top: 1.25rem; right: 1.5rem;
+      font-family: 'Noto Serif SC', serif; font-size: 2.8rem; font-weight: 900;
+      color: rgba(255,36,66,0.12);
+    }
+    .tag {
+      display: inline-block; padding: 0.25rem 0.7rem;
+      background: rgba(255,36,66,0.12); color: var(--accent-2);
+      border-radius: 999px; font-size: 0.72rem; font-weight: 500; margin-bottom: 0.75rem;
+    }
+    .niche h3 { font-family: 'Noto Serif SC', serif; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .metric-row { display: flex; gap: 1.25rem; margin: 1rem 0; }
+    .metric { flex: 1; }
+    .metric b { display: block; font-size: 1.4rem; color: var(--accent); }
+    .metric span { font-size: 0.72rem; color: var(--muted); }
+    .niche h4 { color: var(--accent-2); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 1.25rem; margin-bottom: 0.35rem; }
+
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { padding: 0.75rem 0 0.75rem 2rem; position: relative; border-bottom: 1px solid var(--line); color: var(--muted); }
+    .checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+    .footer { text-align: center; padding: 4rem 1.5rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--line); }
+
+    @media (max-width: 768px) {
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .metric-row { flex-direction: column; gap: 0.5rem; }
+      .chart-wrap, .chart-wrap.tall { height: 300px; }
+    }
+
+    @media print {
+      .hero { min-height: auto; padding: 3rem 1.5rem; }
+      section { padding: 2.5rem 1.5rem; }
+      .niche, .card, .chart-box { break-inside: avoid; }
+      body::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="badge">InsightSkill v8.0 × Design Skill</div>
+  <h1>小红书闷声发大财<br>赛道洞察报告</h1>
+  <p>2025-2026 年，小红书最暴利的不是卷破头的美妆穿搭，而是五条「高客单、低品牌集中度、强私域」的隐形赛道。</p>
+  <div class="hero-stats">
+    <div class="stat"><b>3.5亿</b><span>月活用户</span></div>
+    <div class="stat"><b>320%</b><span>本地生活 GMV 增速</span></div>
+    <div class="stat"><b>3800元</b><span>家居平均客单价</span></div>
+    <div class="stat"><b>30%</b><span>男性用户占比</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="section-head"><span class="section-num">01</span><h2>执行摘要</h2></div>
+  <p class="section-desc">核心判断、关键数字与反常识发现</p>
+  <div class="card">
+    <div class="insight">
+      <strong>核心判断：</strong>2025-2026 年小红书最赚钱的赛道，不是卷成血海的美妆穿搭，而是<strong>「高客单、低品牌集中度、强私域」</strong>的五大闷声发财赛道：<strong>家居生活、虚拟资料/知识付费、本地生活 B 端服务、宠物经济、银发轻养生</strong>。
+    </div>
+    <div class="metric-row">
+      <div class="metric"><b>1</b><span>平台用户破圈 + 电商闭环成熟 + 内容即交易</span></div>
+      <div class="metric"><b>3</b><span>关键数字：月活 3.5 亿 / 本地生活 GMV +320% / 家居客单 3800 元</span></div>
+      <div class="metric"><b>1</b><span>反常识：小红卡暂停，但 B 端代运营在闷声发财</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><span class="section-num">02</span><h2>平台基本盘</h2></div>
+  <p class="section-desc">用户结构正在从「一二线年轻女性」向全年龄、全性别、全地域破圈</p>
+
+  <div class="chart-box">
+    <div class="chart-header">
+      <div>
+        <div class="chart-title">小红书核心指标一览</div>
+        <div class="chart-note">以各指标合理上限为 100 的相对指数，标签为实际数值</div>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="platformChart"></canvas>
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th>指标</th><th>数据</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr><td>月活用户</td><td>3.5 亿</td><td>内容即交易的基本盘</td></tr>
+      <tr><td>日均使用时长</td><td>74 分钟</td><td>高粘性社区</td></tr>
+      <tr><td>男性用户占比</td><td>接近 30%</td><td>从女性平台向生活方式平台演进</td></tr>
+      <tr><td>银发用户年增长率</td><td>60%+</td><td>银发消费决策入口形成</td></tr>
+      <tr><td>求购意图日活用户</td><td>近 4000 万</td><td>搜索流量红利巨大</td></tr>
+      <tr><td>新入驻买手数增长</td><td>8.1 倍</td><td>买手电商进入爆发期</td></tr>
+    </tbody>
+  </table>
+
+  <div class="insight">
+    <strong>洞察：</strong>小红书正在从「一二线年轻女性」向「全年龄、全性别、全地域」破圈。这不是流量泛化，而是<strong>多个蓝海人群池被打开</strong>。
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><span class="section-num">03</span><h2>五大赛道</h2></div>
+  <p class="section-desc">数据 → 发现 → 洞察 → 行动</p>
+
+  <div class="chart-box">
+    <div class="chart-header">
+      <div>
+        <div class="chart-title">赛道机会矩阵</div>
+        <div class="chart-note">横轴 = 增长潜力，纵轴 = 竞争强度（越低越好），气泡大小 = 预估市场空间</div>
+      </div>
+    </div>
+    <div class="chart-wrap tall">
+      <canvas id="opportunityChart"></canvas>
+    </div>
+  </div>
+
+  <div class="niche-grid">
+    <div class="niche">
+      <div class="niche-num">01</div>
+      <span class="tag">高客单 · 低品牌集中度</span>
+      <h3>家居生活</h3>
+      <p>卖的不是家具，是「理想家」的生活方式提案。</p>
+      <div class="metric-row">
+        <div class="metric"><b>3800元</b><span>平均客单价</span></div>
+        <div class="metric"><b>6.4倍</b><span>店播 GMV 增速</span></div>
+      </div>
+      <h4>数据层</h4>
+      <p>每月 1.4 亿人浏览家居；儿童玩具收纳箱增速 1145 倍，换鞋凳 115 倍。</p>
+      <h4>洞察层</h4>
+      <p>家居不是红海，而是「大众标品红海、细分场景蓝海」。切中一个具体场景，用主理人 IP + 场景化直播就能跑出来。</p>
+    </div>
+
+    <div class="niche">
+      <div class="niche-num">02</div>
+      <span class="tag">零库存 · 高毛利 · 强私域</span>
+      <h3>虚拟资料 + 知识付费</h3>
+      <p>1 元资料包是钩子，后端陪跑才是利润。</p>
+      <div class="metric-row">
+        <div class="metric"><b>5000+</b><span>单月引流线索</span></div>
+        <div class="metric"><b>30%</b><span>陪跑转化率</span></div>
+      </div>
+      <h4>数据层</h4>
+      <p>教培商家 1 元资料包单月引流 5000+；雅思资料卖出 1.8 万份引流私域 1.8 万人。</p>
+      <h4>洞察层</h4>
+      <p>真正赚钱的不是 9.9 元资料，而是资料背后的高客单陪跑、私教、咨询。边际成本接近零。</p>
+    </div>
+
+    <div class="niche">
+      <div class="niche-num">03</div>
+      <span class="tag">B2B · 高粘性 · 本地化</span>
+      <h3>本地生活 B 端服务</h3>
+      <p>赚商家的钱，比赚用户会员费更稳。</p>
+      <div class="metric-row">
+        <div class="metric"><b>320%</b><span>本地生活 GMV 增速</span></div>
+        <div class="metric"><b>215%</b><span>探店搜索增长</span></div>
+      </div>
+      <h4>数据层</h4>
+      <p>本地生活 GMV 年增速 320%；但小红书「小红卡」上线不足百日暂停。</p>
+      <h4>洞察层</h4>
+      <p>C 端会员跑不通，B 端商家却有强烈代运营需求。探店代运营、旅游定制、家政测评是切口。</p>
+    </div>
+
+    <div class="niche">
+      <div class="niche-num">04</div>
+      <span class="tag">情感溢价 · 细分蓝海</span>
+      <h3>宠物经济</h3>
+      <p>从「养活」到「养好」到「情感纪念」。</p>
+      <div class="metric-row">
+        <div class="metric"><b>1.7亿</b><span>宠物兴趣人群</span></div>
+        <div class="metric"><b>80%+</b><span>宠物殡葬毛利</span></div>
+      </div>
+      <h4>数据层</h4>
+      <p>宠物兴趣人群 1.7 亿；智能用品、宠物座驾、宠物 memorial 毛利超 80%。</p>
+      <h4>洞察层</h4>
+      <p>宠物经济下一阶段不是卖粮，而是「人宠关系升级」带来的细分服务，尤其是宠物老龄化、携宠出行、身后事。</p>
+    </div>
+
+    <div class="niche">
+      <div class="niche-num">05</div>
+      <span class="tag">增量人群 · 竞争少</span>
+      <h3>银发轻养生</h3>
+      <p>被严重低估的「品质享老」需求。</p>
+      <div class="metric-row">
+        <div class="metric"><b>60%+</b><span>银发用户年增</span></div>
+        <div class="metric"><b>187%</b><span>银发品质消费笔记增长</span></div>
+      </div>
+      <h4>数据层</h4>
+      <p>银发用户年增 60%+，60 岁以上活跃用户 3000 万+；银发品质消费笔记增长 187%。</p>
+      <h4>洞察层</h4>
+      <p>银发产品机会在于「藏老化的适老设计」——功能适老但外观不老气，避免用户产生「买了就承认自己老了」的心理负担。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><span class="section-num">04</span><h2>被低估的增量</h2></div>
+  <p class="section-desc">男性用户与下沉市场正在改变内容供给结构</p>
+
+  <div class="chart-box">
+    <div class="chart-header">
+      <div>
+        <div class="chart-title">小红书用户结构</div>
+        <div class="chart-note">男性 + 银发用户增长正在重塑内容消费结构</div>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="userChart"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>男性用户不是不爱小红书，而是过去没有足够多面向男性的优质内容</h3>
+    <p>男性用户占比接近 30%，游戏内容发布量增 168%，二次元增 175%。男性正在把小红书当作 3C、家电、游戏、运动、汽车的决策搜索工具。</p>
+    <div class="insight">
+      <strong>机会方向：</strong>男士护肤、3C 家电、户外运动、汽车内饰改造存在蓝海。如果是男性创作者，可直接切入自己熟悉的兴趣领域。
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><span class="section-num">05</span><h2>冲突 / 反常 / 盲区</h2></div>
+  <p class="section-desc">主动暴露不确定性</p>
+
+  <div class="card">
+    <h3>信源冲突</h3>
+    <table>
+      <thead><tr><th>冲突点</th><th>来源 A</th><th>来源 B</th><th>采信方</th><th>理由</th></tr></thead>
+      <tbody>
+        <tr><td>2025 营收</td><td>媒体估算 30 亿美元</td><td>官方未确认</td><td>均未采信</td><td>仅作趋势参考</td></tr>
+        <tr><td>本地生活机会</td><td>B 端服务商乐观</td><td>小红卡失败报道悲观</td><td>均采信</td><td>C 端会员跑不通，B 端有机会</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>反常识别</h3>
+    <ul>
+      <li><strong>儿童玩具收纳箱增速 1145 倍：</strong>远超传统家具，说明家居细分需求被严重压抑。</li>
+      <li><strong>银发用户年增 60%+：</strong>小红书社区氛围偏年轻，银发涌入说明他们把小红书当作消费决策入口。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>AI 推断的盲区</h3>
+    <table>
+      <thead><tr><th>盲区</th><th>缺失原因</th><th>建议补充</th></tr></thead>
+      <tbody>
+        <tr><td>各赛道真实利润率</td><td>商家很少公开财务</td><td>访谈 3-5 个实际从业者</td></tr>
+        <tr><td>平台政策变化节奏</td><td>小红书政策迭代快</td><td>持续跟踪官方公告</td></tr>
+        <tr><td>下沉用户品类偏好</td><td>公开数据少</td><td>用千瓜/灵犀数据验证</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><span class="section-num">06</span><h2>风险情景</h2></div>
+  <p class="section-desc">基准 / 乐观 / 悲观三情景</p>
+  <table>
+    <thead><tr><th>情景</th><th>关键假设</th><th>对核心结论影响</th><th>建议动作</th><th>置信度</th></tr></thead>
+    <tbody>
+      <tr><td>基准</td><td>平台持续扶持电商与搜索</td><td>五大赛道保持 20-40% 增速</td><td>按可执行清单推进</td><td>中</td></tr>
+      <tr><td>乐观</td><td>男性/银发/下沉破圈超预期</td><td>出现 1-2 个百亿级新赛道</td><td>加大投入，快速矩阵化</td><td>低</td></tr>
+      <tr><td>悲观</td><td>信息差快速抹平，流量成本上升</td><td>窗口期缩短 50%</td><td>先做最小闭环，控制现金流</td><td>中</td></tr>
+    </tbody>
+  </table>
+  <div class="insight">
+    <strong>敏感性：</strong>平台佣金/流量政策变化 ±20% → 直接影响中小商家净利润 5-15 个百分点；竞争者涌入速度 ±30% → 6 个月内可能把某细分赛道从蓝海卷成红海。
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><span class="section-num">07</span><h2>可执行清单</h2></div>
+  <p class="section-desc">从 72 小时到 2-4 周</p>
+  <div class="card">
+    <h3>72 小时内第一步</h3>
+    <ul class="checklist">
+      <li>从五大赛道中选择最匹配自身资源的 1 个</li>
+      <li>用小红书搜索该赛道 20 个高热度关键词</li>
+      <li>发布 3 篇不同角度的测试笔记</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>2-4 周内下一步</h3>
+    <ul class="checklist">
+      <li>跑通最小变现闭环：产生第一笔收入</li>
+      <li>建立私域承接：微信/群聊标准化话术</li>
+      <li>每周复盘数据，找到 1 个可复制爆文模板</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>本报告由 InsightSkill v8.0 生成，并按用户要求调用 Design Skill 输出 HTML + PDF 可视化版本。</p>
+  <p>生成时间：2026-06-17 · 信源数：46 · 整体置信度：中</p>
+</footer>
+
+<script>
+  // Register data labels plugin if available
+  if (typeof ChartDataLabels !== 'undefined') {
+    Chart.register(ChartDataLabels);
+  }
+
+  Chart.defaults.color = '#9ca3af';
+  Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+  Chart.defaults.font.family = "'Noto Sans SC', sans-serif";
+
+  const accent = '#ff2442';
+  const accent2 = '#ff5c7a';
+  const colors = ['#ff2442', '#22d3ee', '#f59e0b', '#a78bfa', '#34d399', '#60a5fa'];
+
+  // 1. Platform metrics — horizontal bar with normalized index
+  const platformCtx = document.getElementById('platformChart').getContext('2d');
+  const platformLabels = ['月活用户', '日均时长', '男性占比', '银发年增', '求购日活', '买手增长'];
+  const platformActuals = ['3.5 亿', '74 分钟', '30%', '60%+', '4000 万', '8.1 倍'];
+  const platformData = [70, 62, 30, 60, 40, 81]; // normalized 0-100
+
+  new Chart(platformCtx, {
+    type: 'bar',
+    data: {
+      labels: platformLabels,
+      datasets: [{
+        data: platformData,
+        backgroundColor: (ctx) => {
+          const c = ctx.chart.ctx;
+          const i = ctx.dataIndex;
+          const g = c.createLinearGradient(0, 0, 400, 0);
+          g.addColorStop(0, colors[i % colors.length]);
+          g.addColorStop(1, adjustAlpha(colors[i % colors.length], 0.6));
+          return g;
+        },
+        borderRadius: 8,
+        barPercentage: 0.65,
+        categoryPercentage: 0.8
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { right: 80 } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(20,20,24,0.95)',
+          titleColor: '#f4f4f5',
+          bodyColor: '#9ca3af',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          callbacks: {
+            label: (ctx) => `实际值：${platformActuals[ctx.dataIndex]}`
+          }
+        },
+        datalabels: {
+          color: '#f4f4f5',
+          anchor: 'end',
+          align: 'right',
+          offset: 6,
+          font: { weight: '600', size: 12 },
+          formatter: (value, ctx) => platformActuals[ctx.dataIndex]
+        }
+      },
+      scales: {
+        x: {
+          min: 0, max: 100,
+          grid: { color: 'rgba(255,255,255,0.05)' },
+          ticks: { color: '#6b7280', callback: v => v + '%' }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: '#f4f4f5', font: { weight: '500' } }
+        }
+      }
+    }
+  });
+
+  // 2. Opportunity matrix — bubble chart with quadrant highlight
+  const oppCtx = document.getElementById('opportunityChart').getContext('2d');
+  const oppData = [
+    { x: 88, y: 32, r: 24, label: '家居生活' },
+    { x: 92, y: 22, r: 22, label: '虚拟资料' },
+    { x: 76, y: 42, r: 20, label: '本地生活 B 端' },
+    { x: 82, y: 52, r: 18, label: '宠物经济' },
+    { x: 72, y: 18, r: 16, label: '银发轻养生' }
+  ];
+
+  const quadrantPlugin = {
+    id: 'quadrant',
+    beforeDraw(chart) {
+      const { ctx, chartArea: { top, bottom, left, right }, scales: { x, y } } = chart;
+      const xMid = x.getPixelForValue(50);
+      const yMid = y.getPixelForValue(50);
+      ctx.save();
+      // sweet spot: high growth, low competition
+      ctx.fillStyle = 'rgba(34,211,238,0.06)';
+      ctx.fillRect(xMid, top, right - xMid, yMid - top);
+      ctx.strokeStyle = 'rgba(34,211,238,0.25)';
+      ctx.setLineDash([6, 6]);
+      ctx.beginPath();
+      ctx.moveTo(xMid, top); ctx.lineTo(xMid, bottom);
+      ctx.moveTo(left, yMid); ctx.lineTo(right, yMid);
+      ctx.stroke();
+      ctx.fillStyle = '#22d3ee';
+      ctx.font = '700 13px "Noto Sans SC", sans-serif';
+      ctx.fillText('甜点区：高增长 × 低竞争', xMid + 14, top + 24);
+      ctx.restore();
+    }
+  };
+
+  new Chart(oppCtx, {
+    type: 'bubble',
+    data: {
+      datasets: [{
+        data: oppData,
+        backgroundColor: [
+          'rgba(255,36,66,0.72)',
+          'rgba(34,211,238,0.72)',
+          'rgba(245,158,11,0.72)',
+          'rgba(167,139,250,0.72)',
+          'rgba(52,211,153,0.72)'
+        ],
+        borderColor: [
+          '#ff2442', '#22d3ee', '#f59e0b', '#a78bfa', '#34d399'
+        ],
+        borderWidth: 2,
+        hoverBackgroundColor: '#ff2442'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { top: 10, right: 40, bottom: 10, left: 10 } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(20,20,24,0.95)',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          callbacks: {
+            label: (ctx) => `${ctx.raw.label}：增长潜力 ${ctx.raw.x}，竞争强度 ${ctx.raw.y}`
+          }
+        },
+        datalabels: {
+          color: '#f4f4f5',
+          anchor: 'center',
+          align: 'center',
+          font: { weight: '700', size: 12 },
+          formatter: (value) => value.label,
+          textShadowColor: 'rgba(0,0,0,0.7)',
+          textShadowBlur: 4
+        }
+      },
+      scales: {
+        x: {
+          min: 0, max: 100,
+          title: { display: true, text: '增长潜力', color: '#9ca3af', font: { size: 12 } },
+          grid: { color: 'rgba(255,255,255,0.05)' },
+          ticks: { color: '#6b7280' }
+        },
+        y: {
+          min: 0, max: 100,
+          title: { display: true, text: '竞争强度（越低越好）', color: '#9ca3af', font: { size: 12 } },
+          grid: { color: 'rgba(255,255,255,0.05)' },
+          ticks: { color: '#6b7280' }
+        }
+      }
+    },
+    plugins: [quadrantPlugin]
+  });
+
+  // 3. User structure — doughnut
+  const userCtx = document.getElementById('userChart').getContext('2d');
+  new Chart(userCtx, {
+    type: 'doughnut',
+    data: {
+      labels: ['女性用户', '男性用户', '银发用户', '其他/未披露'],
+      datasets: [{
+        data: [60, 30, 6, 4],
+        backgroundColor: ['#ff2442', '#22d3ee', '#f59e0b', 'rgba(255,255,255,0.12)'],
+        borderColor: '#141418',
+        borderWidth: 3,
+        hoverOffset: 12
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '62%',
+      layout: { padding: 20 },
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: {
+            color: '#f4f4f5',
+            padding: 20,
+            font: { size: 13 },
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
+        },
+        datalabels: {
+          color: '#f4f4f5',
+          anchor: 'end',
+          align: 'start',
+          offset: 8,
+          font: { weight: '700' },
+          formatter: (value, ctx) => value + '%'
+        }
+      }
+    }
+  });
+
+  function adjustAlpha(hex, alpha) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+</script>
+</body>
+</html>

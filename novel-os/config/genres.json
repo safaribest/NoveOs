@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "id": "male",
+      "name": "男频",
+      "children": [
+        {
+          "id": "male-xuanhuan",
+          "name": "玄幻",
+          "children": [
+            { "id": "male-xuanhuan-dongfang", "name": "东方玄幻", "genre": "东方玄幻", "tags": ["修仙", "宗门", "奇遇", "升级"] },
+            { "id": "male-xuanhuan-yishi", "name": "异世大陆", "genre": "异世大陆", "tags": ["穿越", "魔法", "斗气", "种族"] },
+            { "id": "male-xuanhuan-gaowu", "name": "高武世界", "genre": "高武世界", "tags": ["武道", "气血", "秘境", "异兽"] },
+            { "id": "male-xuanhuan-xiuzhen", "name": "玄幻修真", "genre": "玄幻修真", "tags": ["筑基", "金丹", "飞升", "仙界"] }
+          ]
+        },
+        {
+          "id": "male-dushi",
+          "name": "都市",
+          "children": [
+            { "id": "male-dushi-yineng", "name": "都市异能", "genre": "都市异能", "tags": ["系统", "超能力", "都市传说", "逆袭"] },
+            { "id": "male-dushi-zhongsheng", "name": "重生逆袭", "genre": "重生逆袭", "tags": ["重生", "年代", "创业", "复仇"] },
+            { "id": "male-dushi-yishen", "name": "神医战神", "genre": "神医战神", "tags": ["兵王", "神医", "赘婿", "护短"] },
+            { "id": "male-dushi-zhichang", "name": "职场商战", "genre": "职场商战", "tags": ["职场", "商战", "权谋", "金融"] }
+          ]
+        },
+        {
+          "id": "male-kehuan",
+          "name": "科幻",
+          "children": [
+            { "id": "male-kehuan-xingji", "name": "星际文明", "genre": "星际文明", "tags": ["星际", "机甲", "舰队", "外星文明"] },
+            { "id": "male-kehuan-moshi", "name": "末世危机", "genre": "末世危机", "tags": ["丧尸", "求生", "庇护所", "异能"] },
+            { "id": "male-kehuan-saibo", "name": "赛博朋克", "genre": "赛博朋克", "tags": ["义体", "黑客", "巨企", "霓虹"] },
+            { "id": "male-kehuan-wuxian", "name": "无限流", "genre": "无限流", "tags": ["副本", "主神空间", "生存", "强化"] }
+          ]
+        },
+        {
+          "id": "male-lishi",
+          "name": "历史",
+          "children": [
+            { "id": "male-lishi-jiakong", "name": "架空历史", "genre": "架空历史", "tags": ["穿越", "权谋", "改革", "争霸"] },
+            { "id": "male-lishi-junshi", "name": "历史军事", "genre": "历史军事", "tags": ["战争", "名将", "谋略", "统一"] },
+            { "id": "male-lishi-zhongtian", "name": "历史种田", "genre": "历史种田", "tags": ["基建", "种田", "发明", "富民"] }
+          ]
+        },
+        {
+          "id": "male-xuanyi",
+          "name": "悬疑",
+          "children": [
+            { "id": "male-xuanyi-lingyi", "name": "灵异惊悚", "genre": "灵异惊悚", "tags": ["鬼怪", "道士", "民俗", "恐怖"] },
+            { "id": "male-xuanyi-tuili", "name": "悬疑推理", "genre": "悬疑推理", "tags": ["侦探", "案件", "推理", "反转"] },
+            { "id": "male-xuanyi-daomu", "name": "盗墓探险", "genre": "盗墓探险", "tags": ["古墓", "探险", "风水", "珍宝"] }
+          ]
+        },
+        {
+          "id": "male-youxi",
+          "name": "游戏",
+          "children": [
+            { "id": "male-youxi-wangyou", "name": "虚拟网游", "genre": "虚拟网游", "tags": ["全息", "职业", "公会", "首杀"] },
+            { "id": "male-youxi-dianjing", "name": "电子竞技", "genre": "电子竞技", "tags": ["电竞", "战队", "比赛", "操作"] },
+            { "id": "male-youxi-yijie", "name": "游戏异界", "genre": "游戏异界", "tags": ["游戏降临", "属性面板", "打怪升级", "公会"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "female",
+      "name": "女频",
+      "children": [
+        {
+          "id": "female-gudai",
+          "name": "古代言情",
+          "children": [
+            { "id": "female-gudai-gongdou", "name": "宫斗宅斗", "genre": "宫斗宅斗", "tags": ["后宅", "权谋", "复仇", "嫡女"] },
+            { "id": "female-gudai-chuanyue", "name": "穿越重生", "genre": "穿越重生", "tags": ["穿越", "重生", "逆袭", "甜宠"] },
+            { "id": "female-gudai-zhongtian", "name": "种田经商", "genre": "种田经商", "tags": ["种田", "经商", "美食", "发家致富"] },
+            { "id": "female-gudai-quanmou", "name": "权谋天下", "genre": "权谋天下", "tags": ["朝堂", "权谋", "女强", "争霸"] }
+          ]
+        },
+        {
+          "id": "female-xiandai",
+          "name": "现代言情",
+          "children": [
+            { "id": "female-xiandai-tianchong", "name": "甜宠", "genre": "甜宠", "tags": ["甜宠", "霸总", "治愈", "日常"] },
+            { "id": "female-xiandai-nuelian", "name": "虐恋", "genre": "虐恋", "tags": ["虐恋", "追妻", "误会", "破镜重圆"] },
+            { "id": "female-xiandai-xianhun", "name": "先婚后爱", "genre": "先婚后爱", "tags": ["闪婚", "契约", "日久生情", "掉马"] },
+            { "id": "female-xiandai-yule", "name": "娱乐圈", "genre": "娱乐圈", "tags": ["娱乐圈", "顶流", "综艺", "逆袭"] }
+          ]
+        },
+        {
+          "id": "female-xuanhuan",
+          "name": "玄幻言情",
+          "children": [
+            { "id": "female-xuanhuan-xiuxian", "name": "修仙师徒", "genre": "修仙师徒", "tags": ["修仙", "师徒", "清冷师尊", "救赎"] },
+            { "id": "female-xuanhuan-qihuan", "name": "奇幻冒险", "genre": "奇幻冒险", "tags": ["魔法", "冒险", "异世界", "成长"] },
+            { "id": "female-xuanhuan-shoushi", "name": "兽世星际", "genre": "兽世星际", "tags": ["兽人", "星际", "雄竞", "种田"] }
+          ]
+        },
+        {
+          "id": "female-xuanyi",
+          "name": "悬疑灵异",
+          "children": [
+            { "id": "female-xuanyi-tuili", "name": "悬疑推理", "genre": "悬疑推理", "tags": ["破案", "法医", "侧写", "悬疑"] },
+            { "id": "female-xuanyi-lingyi", "name": "灵异惊悚", "genre": "灵异惊悚", "tags": ["捉鬼", "玄学", "直播", "惊悚"] },
+            { "id": "female-xuanyi-wuxian", "name": "无限流", "genre": "无限流", "tags": ["副本", "生存", "双强", "解密"] }
+          ]
+        },
+        {
+          "id": "female-kuaichuan",
+          "name": "快穿",
+          "children": [
+            { "id": "female-kuaichuan-shuangwen", "name": "快穿爽文", "genre": "快穿爽文", "tags": ["快穿", "打脸", "虐渣", "逆袭"] },
+            { "id": "female-kuaichuan-xitong", "name": "系统任务", "genre": "系统任务", "tags": ["系统", "攻略", "任务", "救赎"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

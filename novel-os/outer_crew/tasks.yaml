@@ -1,0 +1,101 @@
+# Novel-OS 外层 CrewAI Task 定义
+# 4 个 Task，对应 4 个外层 Agent
+
+tasks:
+  # ==================================================================
+  # Task 1: 全书架构巡检
+  # ==================================================================
+  architecture_review:
+    agent: novel_architect
+    description: >
+      ## 全书大纲
+      {outline_summary}
+
+      ## 最近 5 章摘要
+      {chapter_history}
+
+      ## 当前人物状态
+      {character_states}
+
+      ## 未回收伏笔
+      {pending_foreshadowing}
+
+      请生成第 {chapter_number} 章节点上的全书架构巡检报告。
+      严格按照 Novel Architect 的 backstory 中定义的 4 个模块输出。
+    expected_output: |
+      全书架构巡检报告（Markdown），包含：
+      1. 偏离分析（含严重程度和建议）
+      2. 角色活跃度
+      3. 伏笔健康度
+      4. 下 5 章优先级
+
+  # ==================================================================
+  # Task 2: 跨章一致性巡检
+  # ==================================================================
+  continuity_check:
+    agent: continuity_inspector
+    description: >
+      ## 最近 5 章全文
+      {recent_chapters}
+
+      ## 人物-设定-物品对照表
+      {consistency_snapshot}
+
+      ## 前文关键事实快照
+      {key_facts}
+
+      请对最近 5 章进行逐项跨章一致性比对。
+      严格按照 Continuity Inspector 的 backstory 中定义的模块输出。
+    expected_output: |
+      一致性巡检报告（Markdown），包含：
+      1. 矛盾清单（含章号、描述、严重程度、建议处理）
+      2. 无声矛盾和遗漏检查
+      3. 修正优先级排序
+
+  # ==================================================================
+  # Task 3: 节奏分析
+  # ==================================================================
+  pacing_analysis:
+    agent: pacing_analyst
+    description: >
+      ## 最近 10 章情绪坐标
+      {emotion_coordinates}
+
+      ## 最近 10 章钩子类型
+      {hook_types}
+
+      ## 最近 10 章字数
+      {word_counts}
+
+      ## 最近 10 章开头类型
+      {opening_types}
+
+      请对最近 10 章进行节奏分析。
+      严格按照 Pacing Analyst 的 backstory 中定义的模块输出。
+    expected_output: |
+      节奏分析报告（Markdown），包含：
+      1. 10 章情绪曲线图（ASCII）
+      2. 钩子类型分布
+      3. 开头吸引力分析
+      4. 字数趋势
+      5. 下 10 章节奏建议
+
+  # ==================================================================
+  # Task 4: 回溯修正
+  # ==================================================================
+  retcon_fix:
+    agent: retcon_manager
+    description: >
+      ## 🔴 致命矛盾列表
+      {critical_issues}
+
+      ## 矛盾涉及的前文章节
+      {affected_chapters}
+
+      ## 当前故事进度
+      已写到第 {chapter_number} 章
+
+      请对每个 🔴 矛盾设计修复方案。
+      严格按照 Retcon Manager 的 backstory 中定义的策略执行。
+    expected_output: |
+      回溯修正方案（Markdown），包含每个矛盾的具体修复策略和可执行文案。

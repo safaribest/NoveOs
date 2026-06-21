@@ -1,0 +1,104 @@
+{
+  "total_rounds": 2,
+  "converged": false,
+  "final_status": "continuing",
+  "rounds": [
+    {
+      "round": 1,
+      "findings": 18,
+      "proposals": 6,
+      "approved": 2,
+      "rejected": 4,
+      "convergence": "continuing",
+      "tokens": 0,
+      "before_avg_score": 0.214,
+      "after_avg_score": 0.214
+    },
+    {
+      "round": 2,
+      "findings": 17,
+      "proposals": 5,
+      "approved": 1,
+      "rejected": 4,
+      "convergence": "continuing",
+      "tokens": 0,
+      "before_avg_score": 0.214,
+      "after_avg_score": 0.214
+    }
+  ],
+  "total_proposals": 3,
+  "snapshots": [
+    {
+      "id": "snapshot_20260620_195116",
+      "label": "round_2",
+      "created_at": "2026-06-20 19:51:16",
+      "asset_count": 43
+    },
+    {
+      "id": "snapshot_20260620_195115",
+      "label": "round_1",
+      "created_at": "2026-06-20 19:51:15",
+      "asset_count": 43
+    },
+    {
+      "id": "snapshot_20260620_193749",
+      "label": "fanqie_test",
+      "created_at": "2026-06-20 19:37:49",
+      "asset_count": 43
+    },
+    {
+      "id": "snapshot_20260620_193622",
+      "label": "fanqie_test",
+      "created_at": "2026-06-20 19:36:22",
+      "asset_count": 43
+    },
+    {
+      "id": "snapshot_20260620_193535",
+      "label": "fanqie_test",
+      "created_at": "2026-06-20 19:35:35",
+      "asset_count": 43
+    },
+    {
+      "id": "snapshot_20260620_193311",
+      "label": "fanqie_test",
+      "created_at": "2026-06-20 19:33:11",
+      "asset_count": 43
+    },
+    {
+      "id": "snapshot_20260619_202838",
+      "label": "final_rules",
+      "created_at": "2026-06-19 20:28:38",
+      "asset_count": 35
+    },
+    {
+      "id": "snapshot_20260619_202504",
+      "label": "restored_round1",
+      "created_at": "2026-06-19 20:25:04",
+      "asset_count": 35
+    },
+    {
+      "id": "snapshot_20260619_202425",
+      "label": "path_c_round2",
+      "created_at": "2026-06-19 20:24:25",
+      "asset_count": 35
+    },
+    {
+      "id": "snapshot_20260619_201529",
+      "label": "round_1_persistent",
+      "created_at": "2026-06-19 20:15:29",
+      "asset_count": 35
+    },
+    {
+      "id": "snapshot_20260619_201341",
+      "label": "round_1_formal",
+      "created_at": "2026-06-19 20:13:41",
+      "asset_count": 35
+    },
+    {
+      "id": "snapshot_20260619_200411",
+      "label": "round_1_auto",
+      "created_at": "2026-06-19 20:04:11",
+      "asset_count": 35
+    }
+  ]
+}

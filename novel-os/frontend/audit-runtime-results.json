@@ -1,0 +1,438 @@
+{
+  "pages": [
+    {
+      "name": "home",
+      "path": "/",
+      "url": "http://127.0.0.1:5176/",
+      "status": 200,
+      "title": "Novel-OS | AI 小说写作系统",
+      "isBlank": false,
+      "hasWhiteScreen": false,
+      "hasErrorText": false,
+      "bodyPreview": "Novel-OSAI 写作系统仪表盘仪表盘创作项目列表创建项目系统LLM 配置当前项目未选择项目收起导航仪表盘⌘K项目总览管理和创作你的网文项目⌘K当前项目-加载失败：请求失败: 502已完成章节0累计创作章节数默认 LLM未配置配置后才能使用洞察和写作功能开始创作选择一个方向，让 AI 帮你完成从选题到成书的全过程新建项目配置 LLM"
+    },
+    {
+      "name": "projects",
+      "path": "/projects",
+      "url": "http://127.0.0.1:5176/projects",
+      "status": 200,
+      "title": "Novel-OS | AI 小说写作系统",
+      "isBlank": false,
+      "hasWhiteScreen": false,
+      "hasErrorText": false,
+      "bodyPreview": "Novel-OSAI 写作系统仪表盘仪表盘创作项目列表创建项目系统LLM 配置当前项目未选择项目收起导航项目列表⌘K项目列表所有网文项目⌘K全部项目新建项目加载项目失败：请求失败: 502"
+    },
+    {
+      "name": "settings-llm",
+      "path": "/settings/llm",
+      "url": "http://127.0.0.1:5176/settings/llm",
+      "status": 200,
+      "title": "Novel-OS | AI 小说写作系统",
+      "isBlank": false,
+      "hasWhiteScreen": false,
+      "hasErrorText": false,
+      "bodyPreview": "Novel-OSAI 写作系统仪表盘仪表盘创作项目列表创建项目系统LLM 配置当前项目未选择项目收起导航系统设置/LLM 配置⌘KLLM 配置管理你的大语言模型 Provider，洞察和写作都需要调用它们⌘KProvider 列表Agent 分配Provider 列表添加 Provider还没有配置任何 LLM Provider点击下方按钮添加第一个"
+    },
+    {
+      "name": "write",
+      "path": "/projects/租金300块99条禁忌/write",
+      "url": "http://127.0.0.1:5176/projects/租金300块99条禁忌/write",
+      "status": 200,
+      "title": "Novel-OS",
+      "isBlank": false,
+      "hasWhiteScreen": false,
+      "hasErrorText": true,
+      "bodyPreview": "Novel-OSAI 写作系统仪表盘仪表盘创作项目列表创建项目写作工作台系统LLM 配置当前项目租金300块99条禁忌收起导航项目列表/租金300块99条禁忌/写作工作台⌘K写作控制台待启动0 字·--·加载中开始全部卷全部暂无章节新建章节章节内容0 字·已保存选择左侧章节查看内容自动保存已开启字数目标 0%实时日志0全部infowarningerrorsuccess暂无日志Agent 状态规划师 Planner空闲情节师 Plotter空闲文笔师 Stylist空闲质检员 Reviewer空闲追读力评估师空闲本章质量门禁--86情节完整性80文笔流畅度83人设一致性77爽点密度72合规质检字"
+    }
+  ],
+  "consoleErrors": [
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/api/projects",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "warning",
+      "text": "日志流异常: 日志流连接异常，正在重连..."
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "type": "warning",
+      "text": "日志流异常: 日志流连接异常，正在重连..."
+    }
+  ],
+  "networkErrors": [
+    {
+      "page": "http://127.0.0.1:5176/",
+      "url": "http://127.0.0.1:5176/api/v1/settings/llm",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "url": "http://127.0.0.1:5176/api/v1/projects",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "url": "http://127.0.0.1:5176/api/v1/settings/llm",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/",
+      "url": "http://127.0.0.1:5176/api/v1/projects",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "url": "http://127.0.0.1:5176/api/v1/projects",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects",
+      "url": "http://127.0.0.1:5176/api/v1/projects",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "url": "http://127.0.0.1:5176/api/v1/settings/llm",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "url": "http://127.0.0.1:5176/api/v1/settings/llm/agents",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "url": "http://127.0.0.1:5176/api/v1/settings/llm",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/settings/llm",
+      "url": "http://127.0.0.1:5176/api/v1/settings/llm/agents",
+      "status": 502
+    },
+    {
+      "page": "about:blank",
+      "url": "http://127.0.0.1:5176/api/projects",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/pipeline",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/chapters",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/logs?limit=50",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/logs/stream",
+      "status": 502
+    },
+    {
+      "page": "http://127.0.0.1:5176/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/write",
+      "url": "http://127.0.0.1:5176/api/v1/projects/%E7%A7%9F%E9%87%91300%E5%9D%9799%E6%9D%A1%E7%A6%81%E5%BF%8C/logs/stream",
+      "status": 502
+    }
+  ],
+  "summary": {}
+}

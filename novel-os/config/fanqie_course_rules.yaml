@@ -1,0 +1,327 @@
+version: "1.0"
+source: "番茄小说创作课 / 222 节官方课程"
+description: "番茄官方验证的网文爆款规则，按品类和章节阶段注入"
+
+rules:
+  # ── 开篇规则 ──
+  opening:
+    active_chapters: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # ★ 扩大到前10章（原只3章）
+    max_lead_in_words: 300
+    required_elements:
+      - "主角出场"
+      - "核心冲突或目标"
+      - "未解悬念或强烈情绪"
+    forbidden_patterns:
+      - key: "worldview_exposition"
+        name: "大段世界观铺陈"
+        indicators: ["这个世界", "这片大陆", "在这个世界", "天地规则", "修炼体系"]
+      - key: "slow_ensemble"
+        name: "群像缓慢登场"
+        indicators: ["众人", "一群", "纷纷", "各自"]
+      - key: "lyrical_flashback"
+        name: "抒情回忆"
+        indicators: ["记得", "往事", "曾经", "那时候", "从前"]
+    hook_markers:
+      - "？"
+      - "！"
+      - "没想到"
+      - "突然"
+      - "竟然"
+      - "才"
+      - "居然"
+      - "错了"
+      - "反对"
+      - "拒绝"
+      - "质问"
+      - "不可能"
+      - "完了"
+      # ★ 扩充（2026-06-20）
+      - "莫非"
+      - "究竟"
+      - "为何"
+      - "会不会"
+      - "是否"
+      - "只见"
+      - "猛地"
+      - "还没来得及"
+      - "偏偏"
+      - "谁知"
+
+  # ── 章节节奏规则 ──
+  chapter_beat:
+    min_climax_per_chapter: 1
+    climax_keywords:
+      - "终于"
+      - "果然"
+      - "反转"
+      - "逆转"
+      - "爆发"
+      - "震惊"
+      - "震撼"
+      - "没想到"
+      - "竟然"
+      - "炸裂"
+      - "不可思议"
+      - "不可能"
+      - "不会吧"
+    ending_hook_required: true
+    ending_hook_zone: 200
+    ending_hook_markers:
+      - "？"
+      - "！"
+      - "不知道"
+      - "不明白"
+      - "突然"
+      - "然而"
+      - "可是"
+      - "但"
+      - "正要"
+      - "就要"
+      - "即将"
+      - "等着"
+      - "会怎样"
+      - "难道"
+      # ★ 扩充（2026-06-20）：覆盖更多悬念手法
+      - "莫非"
+      - "究竟"
+      - "为何"
+      - "会不会"
+      - "是否"
+      - "却见"
+      - "只见"
+      - "猛地"
+      - "还没来得及"
+      - "偏偏"
+      - "谁知"
+      - "不料"
+      - "万万没想到"
+      - "倒吸一口凉气"
+      - "瞳孔一缩"
+      - "不可能"
+      - "不会吧"
+      - "完了"
+
+  # ── 对话规则 ──
+  dialogue:
+    ratio_range: [0.25, 0.45]
+    min_exchanges_per_scene: 3
+    forbidden_tags:
+      - "低语"
+      - "呢喃"
+      - "沉声道"
+      - "冷声道"
+      - "缓缓道"
+      - "轻声道"
+      - "淡淡道"
+
+  # ── 情绪配比（按品类）──
+  pacing:
+    default_emotion_ratio:
+      shuang: 0.35
+      tian: 0.25
+      ping: 0.25
+      nue: 0.15
+    emotion_ratios:
+      # 男频
+      male_dushi_zhongsheng:
+        name: "男频都市重生逆袭"
+        shuang: 0.50
+        tian: 0.20
+        ping: 0.20
+        nue: 0.10
+      male_dushi_yineng:
+        name: "男频都市异能"
+        shuang: 0.45
+        tian: 0.15
+        ping: 0.25
+        nue: 0.15
+      male_xuanhuan_dongfang:
+        name: "男频东方玄幻"
+        shuang: 0.45
+        tian: 0.10
+        ping: 0.30
+        nue: 0.15
+      male_xuanhuan_yishi:
+        name: "男频异世大陆"
+        shuang: 0.45
+        tian: 0.15
+        ping: 0.25
+        nue: 0.15
+      male_xuanyi_tuili:
+        name: "男频悬疑推理"
+        shuang: 0.20
+        tian: 0.05
+        ping: 0.35
+        nue: 0.40
+      male_kehuan_moshi:
+        name: "男频末世危机"
+        shuang: 0.30
+        tian: 0.05
+        ping: 0.35
+        nue: 0.30
+      # 女频
+      female_gudai_chuanyue:
+        name: "女频古代穿越重生"
+        shuang: 0.30
+        tian: 0.40
+        ping: 0.20
+        nue: 0.10
+      female_gudai_gongdou:
+        name: "女频宫斗宅斗"
+        shuang: 0.35
+        tian: 0.15
+        ping: 0.25
+        nue: 0.25
+      female_xiandai_tianchong:
+        name: "女频现代甜宠"
+        shuang: 0.25
+        tian: 0.55
+        ping: 0.15
+        nue: 0.05
+      female_xiandai_nuelian:
+        name: "女频现代虐恋"
+        shuang: 0.20
+        tian: 0.30
+        ping: 0.20
+        nue: 0.30
+      female_xuanyi_tuili:
+        name: "女频悬疑推理"
+        shuang: 0.20
+        tian: 0.10
+        ping: 0.35
+        nue: 0.35
+    max_same_emotion_streak: 3
+    emotion_keywords:
+      shuang:
+        - "终于"
+        - "果然"
+        - "痛快"
+        - "解气"
+        - "扬眉吐气"
+        - "碾压"
+        - "打脸"
+        # ★ 扩充（2026-06-20）
+        - "畅快"
+        - "过瘾"
+        - "爽快"
+        - "酣畅淋漓"
+        - "势如破竹"
+        - "所向披靡"
+        - "一拳"
+        - "秒杀"
+        - "吊打"
+        - "完虐"
+        - "蹂躏"
+        - "震撼全场"
+        - "目瞪口呆"
+        - "哑口无言"
+        - "俯视"
+        - "蔑视"
+        - "不屑"
+        - "霸气"
+        - "威风"
+        - "扬名"
+        - "翻了身"
+        - "讨回公道"
+      tian:
+        - "温柔"
+        - "心动"
+        - "宠溺"
+        - "甜"
+        - "暖意"
+        - "脸红"
+        # ★ 扩充
+        - "幸福"
+        - "甜蜜"
+        - "害羞"
+        - "心跳"
+        - "悸动"
+        - "依恋"
+        - "呵护"
+        - "心疼"
+        - "柔软"
+        - "微笑"
+        - "欣慰"
+        - "满足"
+        - "安心"
+        - "踏实"
+        - " reliance"
+        - "默契"
+        - "相视"
+        - "拥抱"
+        - "额头相抵"
+        - "十指紧扣"
+      nue:
+        - "委屈"
+        - "绝望"
+        - "心痛"
+        - "恨"
+        - "哭"
+        - "背叛"
+        # ★ 扩充
+        - "撕裂"
+        - "崩溃"
+        - "窒息"
+        - "苦涩"
+        - "锥心"
+        - "泣不成声"
+        - "泪流满面"
+        - "心如刀割"
+        - "万念俱灰"
+        - "走投无路"
+        - "孤立无援"
+        - "被抛弃"
+        - "被辜负"
+        - "被欺骗"
+        - "被利用"
+        - "被践踏"
+        - "冷暴力"
+        - "PUA"
+        - "操控"
+        - "屈辱"
+        - "隐忍"
+        - "咬唇"
+        - "强撑"
+      ping:
+        - "平静"
+        - "日常"
+        - "普通"
+        - "安静"
+        # ★ 扩充
+        - "平淡"
+        - "寻常"
+        - "按部就班"
+        - "波澜不惊"
+        - "一如既往"
+        - "有条不紊"
+        - "闲适"
+        - "从容"
+        - "寻常的一天"
+        - "没什么特别"
+
+  # ── 人物规则 ──
+  character:
+    required_tags_per_lead: 2
+    forbidden_flat_traits:
+      - "善良"
+      - "聪明"
+      - "漂亮"
+      - "帅气"
+      - "勇敢"
+      - "温柔"
+    fingerprint_fields:
+      - "口头禅"
+      - "招牌动作"
+      - "说话节奏"
+      - "情绪触发点"
+
+  # ── 平台安全规则 ──
+  platform:
+    redline_topics:
+      - "抄袭"
+      - "侵权"
+      - "涉政"
+      - "色情"
+      - "暴力"
+      - "邪教"
+      - "毒品"

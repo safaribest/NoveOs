@@ -1,0 +1,54 @@
+platform_id: fanqie_novel
+name: 番茄小说
+url: https://fanqienovel.com
+
+# 番茄小说平台规则与推荐机制
+rules:
+  # 字数要求
+  min_words_per_chapter: 2000
+  recommended_words_per_chapter: 4500
+  max_words_per_chapter: 5000
+  
+  # 推荐验证期
+  validation_period_chapters: 8
+  validation_word_count: 20000
+  
+  # 首秀机制
+  first_show_chapters: 10
+  first_show_word_count: 30000
+  
+  # 完读率权重
+  read_through_weight:
+    day_1: 0.30
+    day_3: 0.25
+    day_7: 0.20
+    day_30: 0.15
+    finish_rate: 0.10
+
+  # 热点标签（用于选题对标）
+  trending_tags:
+    - 重生年代
+    - 先婚后爱
+    - 马甲文
+    - 团宠
+    - 替嫁
+    - 真假千金
+    - 空间灵泉
+    - 闪婚
+    - 追妻火葬场
+    - 萌宝
+
+  # 禁忌内容
+  forbidden_content:
+    -  detailed 色情描写
+    -  detailed 暴力血腥
+    - 政治敏感
+    - 封建迷信（需包装为"系统"/"金手指"）
+    - 穿越者公开宣扬现代政治理念
+
+# 收益模型（参考）
+revenue:
+  ad_share: true
+  full_purchase: false
+  monthly_tickets: true
+  reward_ratio: "50%"

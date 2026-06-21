@@ -1,0 +1,40 @@
+project: 婆婆逼我养外孙我直播掀桌离婚
+platform: fanqie_novel
+genre: 现代都市
+target_tier: A+
+total_words_target: 35000
+chapters_target: 12
+words_per_chapter: 1800
+base_path: "${NOVEL_BASE_PATH}/婆婆逼我养外孙我直播掀桌离婚"
+output_dir: "chapters"
+agent_query:
+  director:
+    role: "世情短篇导演"
+    type: "director"
+  writer:
+    role: "世情短篇写手"
+    type: "writer"
+  polish:
+    role: "去AI味润色师"
+    type: "polish"
+  auditor:
+    role: "硬指标审计员"
+    type: "auditor"
+writing:
+  words_per_chapter: 1800
+  tolerance: 300
+  max_retries: 3
+  batch_size: 3
+llm:
+  model: deepseek-v4-flash
+  api_key: "${DEEPSEEK_API_KEY}"
+  api_base: https://api.deepseek.com/v1
+  temperature: 0.5
+  max_tokens: 4000
+  timeout: 180
+  thinking_enabled: false
+plugin_id: ""
+exploration_mode:
+  enabled: true
+  until_chapter: 3
+  max_retries: 1

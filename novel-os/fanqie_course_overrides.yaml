@@ -1,0 +1,4 @@
+version: '1.0'
+rules:
+  chapter_beat:
+    ending_hook_zone: 300

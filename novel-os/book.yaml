@@ -1,0 +1,90 @@
+project: 重生七八：老娘要搞钱
+platform: fanqie_novel
+genre: era_biz
+target_tier: A+
+total_words_target: 800000
+chapters_target: 240
+words_per_chapter: 4500
+base_path: "${NOVEL_BASE_PATH}/重生七八老娘要搞钱"
+# crewai_db_path 已废弃，不再需要（CrewAI 框架已完全移除）
+# crewai_db_path: "${CREWAI_STUDIO_PATH}/crewai.db"
+output_dir: "chapters"
+v8_dir: "chapters/V8.0"
+agent_query:
+  director:
+    role: "重生七八小说导演"
+    type: "director"
+  writer:
+    role: "重生七八节拍写作员"
+    type: "writer"
+  polish:
+    role: "重生七八去AI味润色师"
+    type: "polish"
+  auditor:
+    role: "重生七八硬指标审计员"
+    type: "auditor"
+  # ── 外层巡检 Agent（每 5-10 章触发）──
+  novel_architect:
+    role: 年代商战小说架构师
+    goal: 对照大纲检查最近5章产出，确保商战线/感情线/年代感三条主线同步推进，发现偏离和角色遗忘
+    description: |
+      巡检第{chapter_number}章节点。本书是年代商战+大女主重生文（240章长篇）。
+      【巡检维度】
+      1. 偏离分析：最近5章核心事件是否对应大纲？商战节奏(谈判/布局/破局)是否与感情线交替推进？
+      2. 角色活跃度：女主/男主/反派/闺蜜——谁被遗忘了？配角线是否断档？
+      3. 伏笔健康度：商业布局伏笔(谁埋的/何时收)、感情线伏笔(误会/和解/升温)——哪些超期未收？
+      4. 年代细节：八十年代的时代质感(物价/服装/社会氛围/政策背景)是否持续在场？有没有"穿着古装说现代话"？
+      5. 下5章优先级：基于偏离和债务，标注必须完成的关键事件。
+    expected_output: 架构巡检报告（Markdown，含健康度A-F、偏离清单、角色活跃度矩阵、下5章优先级）
+  continuity_inspector:
+    role: 年代商战一致性巡检员
+    goal: 确保人物位置/资产状态/时间线/年代细节在跨章间自洽
+    description: |
+      巡检第{chapter_number}章一致性。年代文读者最敏感的是"穿帮"——80年代出现90年代才有的东西=致命。
+      【高频矛盾模式】
+      1. 资产/商业进度：女主的企业规模/资金量/人脉圈层——必须严格递增，不能回退或跳跃
+      2. 时代背景：物价水平、政策环境、社会风气——每个时间节点有对应的真实历史参照
+      3. 人物关系状态：与男主的情感进度(陌生→合作→暧昧→确定)，不能跳跃或无端回退
+      4. 地理/场景：工厂/商铺/城市之间移动——时间距离必须合理
+      5. 人物年龄/外貌：跨越数年的时间线中，人物年龄必须同步增长
+    expected_output: 一致性报告（每条矛盾含章号、描述、严重程度🔴/🟡、修复建议）
+  pacing_analyst:
+    role: 年代商战节奏分析师
+    goal: 分析最近10章商战/感情/日常三条线的配比、爽点密度、字数趋势
+    description: |
+      分析第{chapter_number}章前10章节奏。年代商战文的黄金配比：商战50%+感情30%+年代日常20%。
+      【节奏DNA】
+      - 爽点密度：每章至少1个"打脸/逆袭/碾压"时刻
+      - 商战节奏：布局(铺垫)→交锋(高潮)→收获(爽点)→新危机(钩子)，每3-5章一个循环
+      - 感情线：不能连续3章无感情线推进
+      - 字数稳定性：4500±450字/章，连续下降=读者疲劳警报
+    expected_output: 节奏报告（含情绪曲线、爽点密度统计、字数趋势、下10章建议）
+  retcon_manager:
+    role: 年代商战回溯修正师
+    goal: 对致命矛盾生成修正方案，优先软修正
+    description: |
+      致命矛盾：{critical_issues}
+      涉及章节：{affected_chapters}
+      策略B(软修正)首选→A(硬修正)仅用于数值错误→C(路径调整)→D(延期)。
+      年代文特殊约束：涉及真实历史事件的时间线不可修改；涉及资产数字的可修正范围±10%。
+    expected_output: Retcon方案（每条含策略+修正文案+风险评估）
+writing:
+  words_per_chapter: 4500
+  tolerance: 450
+  max_retries: 3
+  batch_size: 5
+llm:
+  model: deepseek-v4-flash
+  api_key: "${DEEPSEEK_API_KEY}"
+  api_base: https://api.deepseek.com/v1
+  temperature: 0.5
+  max_tokens: 6000
+  timeout: 180
+  thinking_enabled: false
+
+plugin_id: era_biz
+
+exploration_mode:
+  enabled: true
+  until_chapter: 3
+  max_retries: 1

@@ -1,0 +1,56 @@
+platform_id: qimao_novel
+name: 七猫小说
+url: https://www.qimao.com
+
+# 七猫小说平台规则与推荐机制
+rules:
+  # 字数要求
+  min_words_per_chapter: 2000
+  recommended_words_per_chapter: 4000
+  max_words_per_chapter: 5000
+  
+  # 推荐验证期
+  validation_period_chapters: 5
+  validation_word_count: 15000
+  
+  # 保底签约
+  guaranteed_payment:
+    enabled: true
+    min_monthly_words: 150000
+    price_per_thousand: 20  # 元/千字
+  
+  # 完读率权重
+  read_through_weight:
+    day_1: 0.35
+    day_3: 0.25
+    day_7: 0.20
+    day_30: 0.12
+    finish_rate: 0.08
+
+  # 热点标签
+  trending_tags:
+    - 年代文
+    - 重生八零
+    - 军婚甜宠
+    - 糙汉文学
+    - 后妈养崽
+    - 离婚暴富
+    - 下乡知青
+    - 空间种田
+    - 打脸虐渣
+    - 美食文
+
+  # 禁忌内容
+  forbidden_content:
+    -  detailed 色情描写
+    -  detailed 暴力血腥
+    - 政治敏感
+    - 一妻多夫 / 多夫多妻
+    - 未成年人恋爱（过于详细）
+
+# 收益模型（参考）
+revenue:
+  ad_share: true
+  full_purchase: false
+  monthly_tickets: true
+  guaranteed: true

@@ -1,0 +1,46 @@
+project: 开局和亲？对不起，我只想建城
+platform: 番茄
+genre: 穿越
+target_tier: S
+total_words_target: 90000
+chapters_target: 20
+words_per_chapter: 4500
+base_path: E:\1\NoveOs-master\NoveOs-master\books\和亲公主_测试用
+output_dir: chapters
+writing:
+  tolerance: 450
+  max_retries: 3
+  batch_size: 5
+llm:
+  model: deepseek-chat
+  api_key: YOUR_DEEPSEEK_API_KEY_HERE
+  api_base: https://api.deepseek.com/v1
+  temperature: 0.7
+  max_tokens: 12000
+  timeout: 300
+  reasoning_effort: high
+  thinking_enabled: false
+llm_fallback: {}
+author_persona:
+  voice: |
+    第三人称限知，紧贴女主沈昭宁的感知和内心。像斗罗大陆写唐三那样——
+    情绪可以直接写、背景大方交代、该吐槽就吐槽。
+    段落短碎，1-3句换段为主。叙事节奏快。每章必须有具体事件推进。
+  core_wound: |
+    沈昭宁是北大历史系博士，专攻匈奴考古。她挖过匈奴贵族墓、复原过游牧营帐、
+    研究过草原气候变迁——但这些知识从没用来救过自己的命。穿成和亲公主那天，
+    她知道历史上这位公主三年后就死了。她决定不按历史走。
+  sentence_rhythm:
+    - 段落短碎，1-3句换段为主，一句一段常见
+    - 考据细节自然嵌入叙事，不要旁白科普
+  signature_moves:
+    - 情绪可以直接写
+    - 考古/历史知识是女主的核心武器
+    - 女主聪明但会误判，可以受挫
+    - 章末必须有钩子
+    - 每章有至少一个"干货"（历史细节/生存技巧/权力操作）
+  forbidden_rhetoric:
+    - "不是X是Y句式"
+    - "系统面板词"
+outer_crew:
+  enabled: false

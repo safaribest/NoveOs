@@ -1,0 +1,150 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+venv.bak/
+env.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/prompts/
+logs/*.log
+logs/*.pid
+!logs/deep_optimize.log
+!logs/rugu_ch34_35_flash.log
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+novel-os/config/llm.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Novel-OS runtime artifacts (keep chapters, exclude DB)
+books/*/world_state.db*
+books/*/*.bak*
+books/*/*.bak
+*.pid
+import_outline.py
+
+# Logs (keep only specific ones)
+logs/prompts/
+logs/*.log
+logs/*.pid
+!logs/deep_optimize.log
+!logs/rugu_ch34_35_flash.log
+
+# Build & assets
+app/dist/
+app/frontend.log
+novel-os/frontend/*.log
+# *.png — allow screenshots/docs images
+
+# Project structure: runtime data & archives
+data/
+archive/
+tools/__pycache__/
+
+# Keep specific logs as records
+!logs/deep_optimize.log
+!logs/rugu_ch34_35_flash.log
+
+# IDE & local settings
+.claude/
+
+# Generated docs
+docs/index.html
+noveos-full.zip
+
+# ===== 非核心项目（独立仓库）=====
+openscreen-chinese/
+novel-os-demo/
+
+# ===== 语料数据（已备份到 E:\1）=====
+data_utf8/
+
+# ===== 宣传物料 / 视频 / 大二进制文件 =====
+reports/宣传素材/
+*.mp4
+*.mp3
+*.gif
+*.zip
+*.tar.gz
+
+# ===== 运行时缓存 / 数据 =====
+fanqie_courses_all.json
+fanqie_tutorial_list.json
+projects_resp*.json
+projects_check.json
+rent_logs.json
+logs.json
+regen_progress.txt
+orchestrator.db*
+world_state.db*
+.style_critic_patterns.json
+
+# ===== 测试 / 临时 / 中间产物 =====
+temp_loop_chapters/
+post_reform_chapters/
+pre_reform_chapters/
+output/
+xxiu_*.json
+xxiu_*.md
+xxiu_*.log
+test.pdf
+fanqie_api_test.json
+fanqie_article_test.html
+
+# ===== 根目录录屏文件 =====
+Cap*.mp4
+*.mp4
+*.mov
+
+# ===== 忽略根目录散落的 .exe =====
+*.exe
+
+# ===== 备份 =====
+*.bak.*

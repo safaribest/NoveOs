@@ -1,0 +1,34 @@
+project: 仙子请自重，本座只想修仙
+platform: 起点
+genre: 都市
+target_tier: A
+total_words_target: 225000
+chapters_target: 50
+words_per_chapter: 4500
+base_path: E:\1\NoveOs-master\NoveOs-master\books\仙子请自重，本座只想修仙_feebff3a
+output_dir: chapters
+plugin_id: ''
+agent_query: {}
+writing:
+  tolerance: 450
+  max_retries: 3
+  batch_size: 5
+llm:
+  model: deepseek-chat
+  api_key: YOUR_DEEPSEEK_API_KEY_HERE
+  api_base: https://api.deepseek.com/v1
+  temperature: 0.7
+  max_tokens: 12000
+  timeout: 300
+  reasoning_effort: high
+  thinking_enabled: false
+llm_fallback: {}
+author_persona: {}
+outer_crew:
+  enabled: false
+  inspection_interval: 10
+  auto_apply: false
+exploration_mode:
+  enabled: false
+  until_chapter: 5
+  max_retries: 2
