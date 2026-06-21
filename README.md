@@ -257,9 +257,13 @@ Novel-OS 采用 **三层回路** 工程架构，将网文写作从"单次生成"
 
 ## License
 
-MIT — 可商用、修改、分发，须保留原作者署名。软件按"原样"提供，作者不承担任何责任。
+Novel-OS is released under the [MIT License](LICENSE).
 
-详见 [LICENSE](LICENSE)
+- **Commercial use** — freely allowed
+- **Modification** — freely allowed
+- **Distribution** — freely allowed
+- **Attribution** — must retain the original copyright notice and license text
+- **Liability** — the software is provided "as is", without warranty of any kind. The author assumes no liability for any damages or losses arising from its use.
 
 ---
 
