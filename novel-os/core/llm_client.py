@@ -85,22 +85,19 @@ class LLMClient:
     # ★ 模型选择策略（2026-06-20 更新：全切 deepseek-v4-flash，最省钱方案）
     # flash 模型单价远低于 pro；thinking 全关（thinking 是最大 cost 来源）
     AGENT_MODEL_STRATEGY: dict[str, dict[str, Any]] = {
-        # 快速规划：flash 标准模式
-        "director":       {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 3000},
-        "beat_planner":   {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 3000},
-        # 创意写作：flash 标准模式（关 thinking 省钱，靠 StyleCritic 兜底质量）
-        "scene_writer":   {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.7, "max_tokens": 6000},
-        "hook_engineer":  {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.5, "max_tokens": 4000},
-        # 稳定处理：flash 低温模式
-        "dialogue_tuner": {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 4000},
-        "polish":         {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 4000},
-        "auditor":        {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.0, "max_tokens": 2000},
-        "expander":       {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.5, "max_tokens": 3000},
-        "spot_fix":       {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 3000},
-        "merger":         {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 6000},
-        # StyleCritic 系列（审查/修订）
-        "style_critic":   {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 4000},
-        "style_reviser":  {"model": "deepseek-v4-flash", "thinking_enabled": False, "temperature": 0.4, "max_tokens": 6000},
+        # 本地测试：统一使用 glm-5.1，避免不支持的 deepseek-v4-flash 回退延迟
+        "director":       {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 3000},
+        "beat_planner":   {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 3000},
+        "scene_writer":   {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.7, "max_tokens": 6000},
+        "hook_engineer":  {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.5, "max_tokens": 4000},
+        "dialogue_tuner": {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 4000},
+        "polish":         {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 4000},
+        "auditor":        {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.0, "max_tokens": 2000},
+        "expander":       {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.5, "max_tokens": 3000},
+        "spot_fix":       {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 3000},
+        "merger":         {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 6000},
+        "style_critic":   {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.3, "max_tokens": 4000},
+        "style_reviser":  {"model": "glm-5.1", "thinking_enabled": False, "temperature": 0.4, "max_tokens": 6000},
     }
 
     def __init__(

@@ -73,6 +73,6 @@ class ProjectRepository(BaseRepository):
             total_chapters=row["total_chapters"],
             status=row["status"] or "pending",
             current_chapter=row["current_chapter"] or 0,
-            created_at=row["created_at"] or "",
+            created_at=row["created_at"] if "created_at" in row.keys() else "",
             updated_at=row["updated_at"] or "",
         )

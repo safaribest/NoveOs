@@ -63,8 +63,13 @@ Thumbs.db
 *.sqlite
 *.sqlite3
 
+# Local dev book projects (user-specific paths, API keys, generated chapters)
+books/demo_local/
+books/*_local/
+
 # Novel-OS runtime artifacts (keep chapters, exclude DB)
 books/*/world_state.db*
+books/*/chapters/
 books/*/*.bak*
 books/*/*.bak
 *.pid
